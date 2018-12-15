@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function(){
     };
     
     const showInfo = (li) => {
-        let job = li.getAttribute('data-job');
-        let gender = li.getAttribute('data-gender');
-        let name = li.getAttribute('data-name');
+        let job = li.dataset.job;
+        let gender = li.dataset.gender;
+        let name = li.dataset.name;
         desc.querySelector('.job span').innerHTML = job;
         desc.querySelector('.gender span').innerHTML = gender;
         desc.querySelector('.name span').innerHTML = name;
