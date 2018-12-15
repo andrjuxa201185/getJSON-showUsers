@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function(){
         for (let i = 0; i < users.length; i++) {
             let li = document.createElement('li');
             li.innerHTML = users[i].name;
-            li.setAttribute('data-gender', users[i].gender);
-            li.setAttribute('data-job', users[i].job);
-            li.setAttribute('data-name', users[i].name);
+            li.dataset.gender = users[i].gender;
+            li.dataset.job = users[i].job;
+            li.dataset.name = users[i].name;
             ul.appendChild(li);
         }
     };
